@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+
+}
+
+header.portfolio-site-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+}
+
+
+h1.portfolio-title	{
+	white-space: nowrap;
+}
+
+nav.portfolio-site-nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	flex-grow: 2;
+}
