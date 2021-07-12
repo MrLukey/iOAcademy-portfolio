@@ -8,6 +8,8 @@ header.portfolio-site-header {
 	flex-flow: row wrap;
 	justify-content: flex-start;
 	align-items: baseline;
+	position: sticky; /* keep element where it is without removing from document flow */
+	top: 0; /* set a distance from the top to stick to - 0 means always stay at the top */
 }
 
 
@@ -20,4 +22,13 @@ nav.portfolio-site-nav {
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 	flex-grow: 2;
+}
+
+
+/* MAIN CONTENT */
+
+section.about-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
