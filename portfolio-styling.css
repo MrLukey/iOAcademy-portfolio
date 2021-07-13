@@ -47,6 +47,14 @@ a {
 	padding: 2px;
 }
 
+a.cheat-sheet-link {
+	text-decoration: underline;
+}
+
+a.portfolio-nav-link {
+	font-size: 1.4rem ;
+}
+
 
 /* Set default backgrounds and text colours  */
 
@@ -103,7 +111,17 @@ iframe {
 	height: 400px;
 }
 
-/* Styling for custom classes */
+footer {
+	margin: 0 auto;
+	padding: 5px 0 10px 0;
+	width: 30%;
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 100px;
+}
+
+
+/* Styling for custom classes ============================== */
 
 article.cheat-sheet {
 	max-width: 240px;
@@ -113,10 +131,6 @@ figcaption.cheat-sheet-caption {
 	margin: 5% 0 5% 0;
 }
 
-a.cheat-sheet-link {
-	text-decoration: underline;
-}
-
 header.portfolio-site-header {
 	display: flex;
 	flex-flow: row wrap;
@@ -124,15 +138,12 @@ header.portfolio-site-header {
 	align-items: baseline;
 	position: sticky; /* keep element where it is without removing from document flow */
 	top: 0; /* set a distance from the top to stick to - 0 means always stay at the top */
-	/*background-color: rgb(51, 51, 51);*/
 }
 
 footer.portfolio-site-footer {
 	position: sticky;
 	bottom: 0;
-	/*background-color: rgb(75, 75, 75);*/
 }
-
 
 nav.portfolio-site-nav {
 	display: flex;
@@ -145,6 +156,11 @@ img.about-image, img.project-image {
 	width: 100%;
 	max-width: 300px;
 	margin: 0 auto;
+}
+
+img.logo {
+	width: 50px;
+	height: 50px;
 }
 
 
