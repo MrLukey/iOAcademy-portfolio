@@ -1,0 +1,81 @@
+/* Header, footer and nav */
+
+* {
+	box-sizing: border-box;
+
+}
+
+h1, h2, h3, p, img, figure {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+header.portfolio-site-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	position: sticky; /* keep element where it is without removing from document flow */
+	top: 0; /* set a distance from the top to stick to - 0 means always stay at the top */
+	background-color: rgb(75, 75, 75);
+}
+
+footer.portfolio-site-footer {
+	position: sticky;
+	bottom: 0;
+	background-color: rgb(75, 75, 75);
+}
+
+
+h1.portfolio-title	{
+	white-space: nowrap;
+}
+
+nav.portfolio-site-nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	flex-grow: 2;
+}
+
+
+/* MAIN CONTENT */
+
+h2, h3 {
+	width: 100%;
+	margin: 10px 0 10px 0;
+	text-align: center;
+}
+
+p {
+
+}
+
+section {
+	margin: 5% 0 5% 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+article {
+	min-width: 280px;
+	max-width: 40%;
+	margin: 5% auto;
+	border: 1px solid black;
+}
+
+figure {
+	max-width: 80%;
+	margin: 0 auto;
+
+}
+
+img.about-image, img.project-image {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+
