@@ -86,7 +86,7 @@ section {
 
 nav {
 	padding: 10px;
-	border-bottom: 1px solid rgb(180, 180, 180);;
+	border-bottom: 1px solid rgb(180, 180, 180);
 }
 
 article {
@@ -127,16 +127,12 @@ footer {
 
 /* Styling for custom classes ============================== */
 
-section.about-section {
+section.about-section, article.about-content {
 	justify-content: center;
 }
 
 article.cheat-sheet {
 	max-width: 240px;
-}
-
-article.about-content {
-	justify-content: center;
 }
 
 figcaption.cheat-sheet-caption {
