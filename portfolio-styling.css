@@ -84,7 +84,9 @@ article {
 	border-radius: 25px;
 	background-color: rgb(51, 51, 51);
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	height: 100%;
 }
 
 figure {
