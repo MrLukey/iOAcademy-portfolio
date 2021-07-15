@@ -28,11 +28,6 @@ h2 {
 	text-align: center;
 }
 
-h2.section-title {
-	visibility: hidden;
-	margin: 20px 0 20px 0;
-}
-
 h3 {
 	font-size: 1.8 rem;
 	width: 100%;
@@ -50,14 +45,6 @@ a {
 	font-weight: 500;
 }
 
-a.cheat-sheet-link {
-	text-decoration: underline;
-}
-
-a.portfolio-nav-link {
-	font-size: 1.4rem ;
-}
-
 
 /* Set default backgrounds and text colours  */
 
@@ -71,6 +58,7 @@ h1, h3, p, a {
 
 figcaption {
 	text-decoration: none;
+	text-align: center;
 	color: rgb(102, 102, 102);
 }
 
@@ -104,10 +92,6 @@ figure {
 	margin: 0 auto;
 }
 
-figcaption {
-	text-align: center;
-}
-
 iframe {
 	width: 100%;
 	height: 400px;
@@ -115,8 +99,25 @@ iframe {
 
 /* Styling for custom classes ============================== */
 
+h2.section-title {
+	visibility: hidden;
+	margin: 20px 0 20px 0;
+}
+
+h3.cheat-sheet-title {
+	font-size: 15px;
+}
+
 p.about-info, p.project-info {
 	padding: 10px 8% 8% 8%;
+}
+
+a.cheat-sheet-link {
+	font-size: 15px;
+}
+
+a.portfolio-nav-link {
+	font-size: 1.4rem ;
 }
 
 section.about-section, article.about-content {
