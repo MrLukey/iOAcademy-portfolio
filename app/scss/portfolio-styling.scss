@@ -1,0 +1,189 @@
+/* Basic stuff for reset, site styles and text sizing */
+
+* {
+	box-sizing: border-box;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+html {
+	font-size: 15px;
+	font-family: "Courier New";
+}
+
+h1 {
+	white-space: nowrap;
+	display: none;
+}
+
+h2 {
+	font-size: 2.4rem;
+	width: 100%;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.4rem;
+	width: 100%;
+	margin: 5% 0 5% 0;
+	text-align: center;
+}
+
+p {
+	font-size: 1rem;
+}
+
+a {
+	padding: 2px;
+	white-space: nowrap;
+	font-weight: 500;
+}
+
+
+/* Set default backgrounds and text colours  */
+
+body, header, footer {
+	background-color: rgb(0, 0, 0);
+}
+
+h3, p, a {
+	color: rgb(180, 180, 180);
+}
+
+figcaption, a.cheat-sheet-link {
+	text-decoration: none;
+	text-align: center;
+	color: rgb(102, 102, 102);
+}
+
+
+/* Styling for all elements (no custom classes) */
+
+section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+nav {
+	padding: 10px;
+	border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+article {
+	min-width: 280px;
+	max-width: 400px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 25px;
+	background-color: rgb(51, 51, 51);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	height: 100%;
+}
+
+figure {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
+}
+
+/* Styling for custom classes ============================== */
+
+h2.section-title {
+	visibility: hidden;
+	margin: 20px 0 20px 0;
+}
+
+h3.cheat-sheet-title {
+	font-size: 15px;
+}
+
+h3.about-title, h3.project-title, {
+	margin: 2% 0 2% 0;
+}
+
+p.about-info, p.project-info {
+	padding: 10px 8% 8% 8%;
+	text-align: center;
+}
+
+a.cheat-sheet-link {
+	font-size: 15px;
+}
+
+a.portfolio-nav-link {
+	font-size: 1.4rem ;
+}
+
+section.about-section, article.about-content {
+	justify-content: center;
+}
+
+article.cheat-sheet {
+	max-width: 240px;
+}
+
+figcaption.cheat-sheet-caption {
+	margin: 5% 0 5% 0;
+}
+
+header.portfolio-site-header {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	position: sticky; /* keep element where it is without removing from document flow */
+	top: 0; /* set a distance from the top to stick to - 0 means always stay at the top */
+}
+
+footer.contact-footer {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0 10px 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 100px;
+}
+
+nav.portfolio-site-nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	flex-grow: 2;
+}
+
+img.about-image, img.project-image {
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+img.logo {
+	width: 50px;
+	height: 50px;
+}
+
+/* Responsiveness for custom classes ============================== */
+
+@media screen and (min-width: 600px){
+	html {
+		font-size: 20px;
+	}
+	article.about-content {
+		max-width: 500px;
+	}
+}
